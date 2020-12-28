@@ -173,7 +173,7 @@ def function10():
     
     arr = np.array([[3,3,3],[4,4,4],[5,5,5]])
     brr = np.array([1,2,3])
-    subt = # write your code here 
+    subt = arr-brr[:,None]     # write your code here 
   
     return subt
 
@@ -205,7 +205,8 @@ def function12():
     # HINT: use stacking concept
     
     arr = np.array([1,2,3])
-    ans = #write your code here 
+    ans = np.stack((a,b))
+    ans = np.concatenate((a,b))     #write your code here 
   
     return ans
 
@@ -220,7 +221,7 @@ def function13():
     
     
     arr = np.array([2, 6, 1, 9, 10, 3, 27])
-    ans = #write your code here 
+    ans = arr[1:-3]     #write your code here 
   
     return ans
 
