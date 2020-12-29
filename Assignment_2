@@ -50,7 +50,6 @@ def function2():
     
     x = np.arange(1,28,dtype=np.float64).reshape((3,3,3))     #wrtie your code here
         
-
     return x
     """
     Expected: out put
