@@ -293,7 +293,8 @@ def function17():
     # otherwise it will be replaced with "NO"
     # Hint: np.where
     arr = np.arange(1,10*10+1).reshape((10,10))
-    return           # Write Your Code HERE
+    
+    return  np.where((arr%3==0) & (arr%5==0), "YES","NO")        # Write Your Code HERE
 
 #Excpected Out
 """
@@ -315,7 +316,7 @@ def function18():
     # count values of "students" are exist in "piaic"
     piaic = np.arange(100)
     students = np.array([5,20,50,200,301,7001])
-    x = # Write you code Here
+    x = np.intersect1d(students,piaic).size     # Write you code Here
     return x
 
     #Expected output: 3
@@ -329,10 +330,11 @@ def function19():
     # then create variable "b" with value equal to 5
     # Now return output as "(X*W)+b:
 
-    X =   # Write your code here
-    W =   # Write your code here 
-    b =   # Write your code here
-    output =    # Write your code here
+    X =   np.arange(1,26).reshape(5,5)      # Write your code here
+    W =   X.copy()      # Write your code here 
+          X.transpose()
+    b =   5     # Write your code here
+    output =    (X*W)+5     # Write your code here
     return output
     #expected output
     """
