@@ -220,7 +220,7 @@ def function13():
     
     
     arr = np.array([2, 6, 1, 9, 10, 3, 27])
-    ans = arr[1:-3]     #write your code here 
+    ans = arr[1:-3:2]     #write your code here 
   
     return ans
 
